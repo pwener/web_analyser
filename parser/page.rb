@@ -1,8 +1,11 @@
 require 'nokogiri'
 require 'open-uri'
 
+# Response page of search engine. One of many pages founded!
 class Page
 	attr_reader :url
+
+	@@id = 0
 
 	def initialize(web_page)
 		@url = web_page
@@ -13,8 +16,9 @@ class Page
 	end
 
 	def printf
-		id = @url.gsub(/\W+/, '')
-		File.open("output/" << id, 'w') { |file| file.write(tokenize.to_s) }
+		@@id+=1
+		output_name = "output/file#{@@id}"
+		File.open(output_name, 'w', encoding: 'UTF-8') { |file| file.write(tokenize.to_s) }
 	end
 
 	def tokenize
