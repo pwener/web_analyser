@@ -69,6 +69,6 @@ $ hadoop jar wc.jar WordCount ./input ./output
 
 - Você pode ver o resultado da execução em:
 
-- `$ hadoop fs -cat ./output/part-r-00000` ou simplesmente `$ cat /output/part-r-00000`.
+- `$ hadoop fs -cat ./output/part-r-00000`.
 
 - Bem, basicamente conseguimos rodar um exemplo bem simples onde se tem 2 entradas e uma inferência de resultado. Ótimo exemplo para entender Map-Reduce no Hadoop.

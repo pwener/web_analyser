@@ -50,3 +50,5 @@ drwxrwxr-x 3 kuwener kuwener 4,0K Jul  2 18:28 ..
 -rw-rw-r-- 1 kuwener kuwener  18K Jul  2 22:53 file5
 -rw-rw-r-- 1 kuwener kuwener  19K Jul  2 22:53 file6
 ```
+
+- Esses aquivos serão inputs de entrada do hadoop.
