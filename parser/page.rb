@@ -17,8 +17,10 @@ class Page
 
 	def printf
 		@@id+=1
-		output_name = "output/file#{@@id}"
-		File.open(output_name, 'w', encoding: 'UTF-8') { |file| file.write(tokenize.to_s) }
+		#output_name = "output/file#{@@id}"
+		#File.open(output_name, 'w', encoding: 'UTF-8') { |file| file.write(tokenize.to_s) }
+		output_name = "output"
+		File.open(output_name, 'a', encoding: 'UTF-8') { |file| file.write(tokenize.to_s) }
 	end
 
 	def tokenize
