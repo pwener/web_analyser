@@ -9,7 +9,7 @@
 ```
 - Logo foi preciso atualizar o hosts em todas as máquinas, mas foi percebido que pela configuração de rede feita, onde os dois slaves estavam no wifi, eles não conseguem se comunicar por conta do firewall do roteador. Então só foi configurado ssh dos slaves com o master.
 
-- Então foi configurado o ssh do slave, copiando a chave do master para o slave, via comando:
+- Então foi configurado o ssh copiando a chave do master para o slave, via comando:
 
 ```
 $ ssh-copy-id ~/.ssh/id_rsa.pub vagrant@slave-2
@@ -30,5 +30,3 @@ $ sbin/start-dfs.sh
 ...
 $ sbin/start-yarn.sh
 ```
-
-- 
