@@ -36,6 +36,13 @@ Para configuração de _DataNode_ e _NameNode_ tem-se o arquivo `hdfs-site.xml` 
 - Atraso ou deficiência de alerta no caso de queda dos DataNodes.
   - Quando um DataNode cai, o Hadoop não emite nenhum alerta. Após demasiado tempo ele notifica que o Nó está morto.
 
+
+## Onde usar?
+
+O HDFS pode ser usado como módulo independente. Uma situação bem típica é o armazenamento de dados em sistemas de grandes volumes de arquivos de mídia como provavelmente é feito no Youtube, Google Drive e Instagram, tal que a persistência de arquivos dos usuários esteja sempre disponível e integro.
+
+Qualquer aplicação que precise salvar imagens, vídeos ou qualquer tipo arquivo, é recomendado suporte a um sistema de arquivo distribuído, uma vez que os bancos relacionais tem dificuldades em persistir esses dados.
+
 [1] https://www.ibm.com/developerworks/br/library/wa-introhdfs/index.html
 
 [2] http://hadoopinrealworld.com/namenode-and-datanode/
