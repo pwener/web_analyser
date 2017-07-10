@@ -18,112 +18,7 @@
 17/07/07 17:02:40 INFO mapreduce.Job:  map 6% reduce 0%
 17/07/07 17:02:43 INFO mapreduce.Job:  map 7% reduce 0%
 17/07/07 17:02:44 INFO mapreduce.Job:  map 10% reduce 0%
-17/07/07 17:02:46 INFO mapreduce.Job:  map 11% reduce 0%
-17/07/07 17:02:47 INFO mapreduce.Job:  map 12% reduce 0%
-17/07/07 17:02:49 INFO mapreduce.Job:  map 13% reduce 0%
-17/07/07 17:02:50 INFO mapreduce.Job:  map 14% reduce 0%
-17/07/07 17:02:52 INFO mapreduce.Job:  map 15% reduce 0%
-17/07/07 17:02:53 INFO mapreduce.Job:  map 16% reduce 0%
-17/07/07 17:02:54 INFO mapreduce.Job:  map 17% reduce 0%
-17/07/07 17:02:56 INFO mapreduce.Job:  map 18% reduce 0%
-17/07/07 17:02:59 INFO mapreduce.Job:  map 19% reduce 0%
-17/07/07 17:03:01 INFO mapreduce.Job:  map 21% reduce 0%
-17/07/07 17:03:02 INFO mapreduce.Job:  map 22% reduce 0%
-17/07/07 17:03:06 INFO mapreduce.Job:  map 23% reduce 0%
-17/07/07 17:03:08 INFO mapreduce.Job:  map 24% reduce 0%
-17/07/07 17:03:09 INFO mapreduce.Job:  map 25% reduce 0%
-17/07/07 17:03:13 INFO mapreduce.Job:  map 26% reduce 0%
-17/07/07 17:03:15 INFO mapreduce.Job:  map 27% reduce 0%
-17/07/07 17:03:16 INFO mapreduce.Job:  map 28% reduce 0%
-17/07/07 17:03:19 INFO mapreduce.Job:  map 31% reduce 0%
-17/07/07 17:03:23 INFO mapreduce.Job:  map 33% reduce 0%
-17/07/07 17:03:24 INFO mapreduce.Job:  map 34% reduce 0%
-17/07/07 17:03:29 INFO mapreduce.Job:  map 35% reduce 0%
-17/07/07 17:03:31 INFO mapreduce.Job:  map 36% reduce 0%
-17/07/07 17:03:33 INFO mapreduce.Job:  map 38% reduce 0%
-17/07/07 17:03:35 INFO mapreduce.Job:  map 39% reduce 0%
-17/07/07 17:03:37 INFO mapreduce.Job:  map 40% reduce 0%
-17/07/07 17:03:45 INFO mapreduce.Job:  map 42% reduce 0%
-17/07/07 17:03:46 INFO mapreduce.Job:  map 43% reduce 0%
-17/07/07 17:03:47 INFO mapreduce.Job:  map 43% reduce 13%
-17/07/07 17:03:51 INFO mapreduce.Job:  map 44% reduce 13%
-17/07/07 17:03:53 INFO mapreduce.Job:  map 47% reduce 13%
-17/07/07 17:03:57 INFO mapreduce.Job:  map 48% reduce 13%
-17/07/07 17:03:59 INFO mapreduce.Job:  map 50% reduce 13%
-17/07/07 17:04:03 INFO mapreduce.Job:  map 52% reduce 13%
-17/07/07 17:04:05 INFO mapreduce.Job:  map 55% reduce 13%
-17/07/07 17:04:11 INFO mapreduce.Job:  map 57% reduce 13%
-17/07/07 17:04:12 INFO mapreduce.Job:  map 58% reduce 13%
-17/07/07 17:04:15 INFO mapreduce.Job:  map 59% reduce 13%
-17/07/07 17:04:17 INFO mapreduce.Job:  map 61% reduce 13%
-17/07/07 17:04:21 INFO mapreduce.Job:  map 63% reduce 13%
-17/07/07 17:04:23 INFO mapreduce.Job:  map 64% reduce 13%
-17/07/07 17:04:24 INFO mapreduce.Job:  map 65% reduce 13%
-17/07/07 17:04:25 INFO mapreduce.Job:  map 66% reduce 13%
-17/07/07 17:04:27 INFO mapreduce.Job:  map 67% reduce 13%
-17/07/07 17:04:30 INFO mapreduce.Job:  map 68% reduce 18%
-17/07/07 17:04:33 INFO mapreduce.Job:  map 69% reduce 18%
-17/07/07 17:04:36 INFO mapreduce.Job:  map 72% reduce 18%
-17/07/07 17:04:41 INFO mapreduce.Job:  map 73% reduce 18%
-17/07/07 17:04:42 INFO mapreduce.Job:  map 73% reduce 24%
-17/07/07 17:04:46 INFO mapreduce.Job:  map 75% reduce 24%
-17/07/07 17:04:47 INFO mapreduce.Job:  map 76% reduce 24%
-17/07/07 17:04:52 INFO mapreduce.Job:  map 77% reduce 24%
-17/07/07 17:04:58 INFO mapreduce.Job:  map 79% reduce 24%
-17/07/07 17:04:59 INFO mapreduce.Job:  map 80% reduce 24%
-17/07/07 17:05:01 INFO mapreduce.Job:  map 82% reduce 24%
-17/07/07 17:05:04 INFO mapreduce.Job:  map 84% reduce 24%
-17/07/07 17:05:07 INFO mapreduce.Job:  map 85% reduce 24%
-17/07/07 17:05:10 INFO mapreduce.Job:  map 86% reduce 24%
-17/07/07 17:05:11 INFO mapreduce.Job:  map 87% reduce 24%
-17/07/07 17:05:16 INFO mapreduce.Job:  map 88% reduce 24%
-17/07/07 17:05:19 INFO mapreduce.Job:  map 89% reduce 24%
-17/07/07 17:05:22 INFO mapreduce.Job:  map 92% reduce 24%
-17/07/07 17:05:28 INFO mapreduce.Job:  map 93% reduce 24%
-17/07/07 17:05:29 INFO mapreduce.Job:  map 94% reduce 24%
-17/07/07 17:05:30 INFO mapreduce.Job:  map 94% reduce 27%
-17/07/07 17:05:31 INFO mapreduce.Job:  map 95% reduce 27%
-17/07/07 17:05:32 INFO mapreduce.Job:  map 96% reduce 27%
-17/07/07 17:05:36 INFO mapreduce.Job:  map 96% reduce 29%
-17/07/07 17:05:38 INFO mapreduce.Job:  map 97% reduce 29%
-17/07/07 17:05:40 INFO mapreduce.Job:  map 99% reduce 29%
-17/07/07 17:05:41 INFO mapreduce.Job:  map 100% reduce 29%
-17/07/07 17:05:48 INFO mapreduce.Job:  map 100% reduce 37%
-17/07/07 17:05:54 INFO mapreduce.Job:  map 100% reduce 40%
-17/07/07 17:06:00 INFO mapreduce.Job:  map 100% reduce 46%
-17/07/07 17:06:06 INFO mapreduce.Job:  map 100% reduce 52%
-17/07/07 17:06:12 INFO mapreduce.Job:  map 100% reduce 55%
-17/07/07 17:06:18 INFO mapreduce.Job:  map 100% reduce 61%
-17/07/07 17:06:24 INFO mapreduce.Job:  map 100% reduce 66%
-17/07/07 17:06:30 INFO mapreduce.Job:  map 100% reduce 67%
-17/07/07 17:07:42 INFO mapreduce.Job:  map 100% reduce 68%
-17/07/07 17:07:48 INFO mapreduce.Job:  map 100% reduce 69%
-17/07/07 17:07:54 INFO mapreduce.Job:  map 100% reduce 70%
-17/07/07 17:08:00 INFO mapreduce.Job:  map 100% reduce 71%
-17/07/07 17:08:06 INFO mapreduce.Job:  map 100% reduce 72%
-17/07/07 17:08:12 INFO mapreduce.Job:  map 100% reduce 73%
-17/07/07 17:08:18 INFO mapreduce.Job:  map 100% reduce 74%
-17/07/07 17:08:24 INFO mapreduce.Job:  map 100% reduce 75%
-17/07/07 17:08:30 INFO mapreduce.Job:  map 100% reduce 76%
-17/07/07 17:08:36 INFO mapreduce.Job:  map 100% reduce 77%
-17/07/07 17:08:42 INFO mapreduce.Job:  map 100% reduce 78%
-17/07/07 17:08:48 INFO mapreduce.Job:  map 100% reduce 79%
-17/07/07 17:08:54 INFO mapreduce.Job:  map 100% reduce 80%
-17/07/07 17:09:01 INFO mapreduce.Job:  map 100% reduce 81%
-17/07/07 17:09:13 INFO mapreduce.Job:  map 100% reduce 82%
-17/07/07 17:09:19 INFO mapreduce.Job:  map 100% reduce 84%
-17/07/07 17:09:25 INFO mapreduce.Job:  map 100% reduce 85%
-17/07/07 17:09:31 INFO mapreduce.Job:  map 100% reduce 86%
-17/07/07 17:09:43 INFO mapreduce.Job:  map 100% reduce 87%
-17/07/07 17:09:49 INFO mapreduce.Job:  map 100% reduce 88%
-17/07/07 17:09:55 INFO mapreduce.Job:  map 100% reduce 89%
-17/07/07 17:10:01 INFO mapreduce.Job:  map 100% reduce 90%
-17/07/07 17:10:07 INFO mapreduce.Job:  map 100% reduce 91%
-17/07/07 17:10:13 INFO mapreduce.Job:  map 100% reduce 92%
-17/07/07 17:10:25 INFO mapreduce.Job:  map 100% reduce 93%
-17/07/07 17:10:31 INFO mapreduce.Job:  map 100% reduce 94%
-17/07/07 17:10:37 INFO mapreduce.Job:  map 100% reduce 95%
-17/07/07 17:10:43 INFO mapreduce.Job:  map 100% reduce 96%
+...
 17/07/07 17:10:49 INFO mapreduce.Job:  map 100% reduce 97%
 17/07/07 17:10:55 INFO mapreduce.Job:  map 100% reduce 98%
 17/07/07 17:11:01 INFO mapreduce.Job:  map 100% reduce 99%
@@ -141,7 +36,7 @@
 		HDFS: Number of read operations=48
 		HDFS: Number of large read operations=0
 		HDFS: Number of write operations=2
-	Job Counters 
+	Job Counters
 		Killed map tasks=2
 		Launched map tasks=17
 		Launched reduce tasks=1
@@ -182,9 +77,9 @@
 		WRONG_LENGTH=0
 		WRONG_MAP=0
 		WRONG_REDUCE=0
-	File Input Format Counters 
+	File Input Format Counters
 		Bytes Read=2026114565
-	File Output Format Counters 
+	File Output Format Counters
 		Bytes Written=2238785729
 
 real	9m2.565s
@@ -336,7 +231,7 @@ $ time hadoop jar wc.jar WordCount hdfs://master:9000/input hdfs://master:9000/o
 		HDFS: Number of read operations=48
 		HDFS: Number of large read operations=0
 		HDFS: Number of write operations=2
-	Job Counters 
+	Job Counters
 		Killed map tasks=1
 		Launched map tasks=16
 		Launched reduce tasks=1
@@ -377,14 +272,28 @@ $ time hadoop jar wc.jar WordCount hdfs://master:9000/input hdfs://master:9000/o
 		WRONG_LENGTH=0
 		WRONG_MAP=0
 		WRONG_REDUCE=0
-	File Input Format Counters 
+	File Input Format Counters
 		Bytes Read=2026114565
-	File Output Format Counters 
+	File Output Format Counters
 		Bytes Written=2238785729
 
 real	6m26.887s
 user	0m6.208s
 sys	0m0.304s
-
 ```
 
+- Percebe-se novamente um tempo de execução menor com a queda de um DataNode. Portanto a conectividade não foi o fator que impactou nos experimentos passados.
+
+- Portanto, há duas hipoteses restantes:
+	- A redundância passou a não ser feita com apenas 1 Node, acelerando mais o processo de MapReduce.
+	- A redudância é um gargalo para 3 datanodes processando a quantidade usada de dados(aproximadamente 2 GB). Quanto maior a massa de dados mais rentável se torna o processamento Hadoop.
+
+- Bem provavelmente as duas estão certas, pois o hadoop foi criado para trabalhar com grandes quantidades de dado em um sistema altamente clusterizado. Logo, quanto mais dados e mais clusters, maior será a diferença testada.
+
+- Por questões de estrutura bem como de quantidade de dados, não foi possível realizar outros testes possíveis.
+
+- Alguns experimentos que revelariam reforçariam nossas hipóteses:
+
+	- Testar com uma ordem de 100 GB de dados.
+	- Testar com pelo menos 10 nós com 100 GB de dados.
+	- Testar numa mesma infra-estrutura com redundância de nível 3, 4 ou mais, para ver qual gargalo disso.
