@@ -23,7 +23,10 @@ Essas duas funções são executadas por um Framework que realiza passos interme
 
 Para facilitar a explicação de como funciona o MapReduce foi criada a seguinte imagem abaixo.
 
+<!--
 ![Map Reduce 1](./images/Map_Reduce_1.png)
+-->
+<img src="https://github.com/pwener/web_analyser/blob/master/images/Map_Reduce_1.png" width="40%" height="40%">
 
 Conforme pode ser visto na imagem, o desenvolvedor se preocupa basicamente em implementar a função Map e a função Reduce, estas funções podem ser vistas como pontos extensíveis do framework. Partes do core do framework também pode ser modificadas através de arquivos de configuração, porém ele é bem mais estático.
 
@@ -97,19 +100,31 @@ Caso uma grande quantidade de dados estivesse sendo processada por um programa c
 
 Primeiramente, o arquivo seria quebrado em blocos menores (isso é feito pelo próprio HDFS). Essa etapa pode ser observada na imagem abaixo.
 
+<!--
 ![Map Reduce 2](./images/Map_Reduce_2.png)
+-->
+<img src="https://github.com/pwener/web_analyser/blob/master/images/Map_Reduce_2.png" width="40%" height="40%">
 
 Posteriormente, cada Mapper (quem executa a função Map), iria ler cada linha do arquivo e gerar uma saída indicando qual a loja e o valor.
 
+<!--
 ![Map Reduce 5](./images/Map_Reduce_5.png)
+-->
+<img src="https://github.com/pwener/web_analyser/blob/master/images/Map_Reduce_5.png" width="40%" height="40%">
 
 O Framework MapReduce irá ordenar o output dos Mappers antes deles serem utilizados como input para os Reducers. Ou seja, agrupará, todos os dados de acordo com as chaves. O resultado pode ser visto abaixo.
 
+<!--
 ![Map Reduce 3](./images/Map_Reduce_3.png)
+-->
+<img src="https://github.com/pwener/web_analyser/blob/master/images/Map_Reduce_3.png" width="40%" height="40%">
 
 Agora que todos os Dados estão agrupados de acordo com as chaves, o papel dos Reducers é somar os valores relacionados a cada par e gerar a receita total da loja de cada região.
 
+<!--
 ![Map Reduce 4](./images/Map_Reduce_4.png)
+-->
+<img src="https://github.com/pwener/web_analyser/blob/master/images/Map_Reduce_4.png" width="40%" height="40%">
 
 #### Map
 
@@ -195,7 +210,10 @@ def reducer():
 
 Abaixo está uma figura exemplificando o processo.
 
-![Map Reduce 6](./images/Map_Reduce_6 .png)
+<!--
+![Map Reduce 6](./images/Map_Reduce_6.png)
+-->
+<img src="https://github.com/pwener/web_analyser/blob/master/images/Map_Reduce_6.png" width="40%" height="40%">
 
 ### Rodar em Python
 
@@ -299,6 +317,9 @@ O papel do Reducer será receber esses pares de Chave-Valor já ordenados e soma
 
 A imagem abaixo demonstra como funcionará este processo.
 
+<!--
 ![Map Reduce 7](./images/Map_Reduce_7.png)
+-->
+<img src="https://github.com/pwener/web_analyser/blob/master/images/Map_Reduce_7.png" width="40%" height="40%">
 
 O código java pode ser encontrado em anexo.
