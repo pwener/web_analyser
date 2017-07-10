@@ -1,4 +1,4 @@
-# Hadoop com cabo de rede
+# Testes Hadoop com cabo de rede
 
 - Uma vez que os testes passados foram feitos com os data nodes conectados via wi-fi, percebeu-se que talvez a conectividade de rede estaria impactando nos experimentos. Para tirar essas dúvidas foram realizados experimentos com um node conectado pelo cabo de rede.
 
