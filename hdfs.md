@@ -39,9 +39,9 @@ Para configuração de _DataNode_ e _NameNode_ tem-se o arquivo `hdfs-site.xml` 
 
 ## Onde usar?
 
-O HDFS pode ser usado como módulo independente. Uma situação bem típica é o armazenamento de dados em sistemas de grandes volumes de arquivos de mídia como provavelmente é feito no Youtube, Google Drive e Instagram, tal que a persistência de arquivos dos usuários esteja sempre disponível e integro.
+O HDFS pode ser usado como módulo independente. Uma situação bem típica é o armazenamento de dados em sistemas de grandes volumes de arquivos de mídia como provavelmente é feito no Youtube, Google Drive e Instagram, tal que os arquivos dos usuários estejam sempre disponíveis e integros.
 
-Qualquer aplicação que precise salvar imagens, vídeos ou qualquer tipo arquivo, é recomendado suporte a um sistema de arquivo distribuído, uma vez que os bancos relacionais tem dificuldades em persistir esses dados.
+Qualquer aplicação que precise salvar imagens, vídeos ou qualquer tipo arquivo, é recomendado suporte a um sistema de arquivos distribuído, uma vez que os bancos relacionais tem dificuldades em persistir esses dados.
 
 [1] https://www.ibm.com/developerworks/br/library/wa-introhdfs/index.html
 
