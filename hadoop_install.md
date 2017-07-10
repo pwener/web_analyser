@@ -72,7 +72,7 @@ export YARN_HOME=$HADOOP_HOME
 
 Para nossos experimentos é necessário a instalação distribuída, para isso é necessário configurar várias máquinas que serão os nós do cluster. Nesse experimento foi utilizado 3 nós, sendo 1 o master e slave, e os outros dois sendo apenas slaves, um será configurado junto ao master e o outro colocado depois, para demonstrar a elasticidade do sistema. Segue abaixo os procedimentos para configuração dos mesmos.
 
-- Uma vez realizada a configuração Standalone acima em todos os nós, é possível prosseguir.
+- Para prosseguir é necessário realizar a configuração Standalone acima.
 
 - Para facilitar trabalhar com os endereços das máquinas, vamos editar o arquivo `/etc/hosts` em cada nó.
 
@@ -86,7 +86,7 @@ Para nossos experimentos é necessário a instalação distribuída, para isso �
 - Para ver o `<ip-master>` e `<ip-slave-1>` basta digitarmos: `ifconfig` em cada um desses nós.
 - O nome da máquina pode ser obtido usando o comando `$ hostname` no terminal.
 
-- No slave, edite também `/etc/hosts` no seguinte formato:
+- No slaves, edite também `/etc/hosts` no seguinte formato:
 
 ```
 <ip-slave-1>   localhost   <nome-da-maquina>   slave-1
@@ -173,6 +173,8 @@ kuwener@slave-1
 ```
 
 - Perceba, antes de `@` temos o nome de usuário, e após o endereço ip da máquina. Caso tivesse sido configurado um usuário em comum para todo cluster, seri necessário usar apenas o endereço, como o master.
+
+- Além do mais, estamos colocando o master como um slave também, isso significa que apesar do nó ter um `NameNode`, ele também pode ter um `DataNode`.
 
 - Em `$HADOOP_HOME/etc/hadoop/hadoop-env.sh` é necessário atualizar a definição da variável JAVA_HOME. Coloque a que está sendo usada no SO: `echo $JAVA_HOME`.
 
@@ -295,3 +297,50 @@ $ jps
 - Perceba que temos dois nós executando.
 
 ## Adicionando um novo nó
+
+- Para adicionar um novo nó é bem simples, basicamente deve-se realizar os seguintes passos:
+
+- Configurar o ambiente em Standalone
+
+- Configurar o `/etc/hosts`, exemplo no caso de um novo node:
+
+```
+192.168.133.193 localhost vagrant       slave-2
+192.168.133.129 slave-1
+192.168.133.149 master
+```
+
+- Configurar `/etc/hosts` no master:
+
+```
+...
+192.168.133.129 slave-2
+```
+
+- Configurar ssh do master para o `Datanode`.
+
+- Atualizar o arquivo slaves, adicionando esse novo slave.
+
+- É preciso ainda atualizar o arquivo `$HADOOP_HOME/etc/hadoop/slaves` com o novo node, para isso basta atualizar a master e dar scp em todos  `DataNodes`:
+
+```
+$ scp fsdadmin@master:/usr/hadoop-2.8.0/etc/ .
+```
+
+- Após devidamente configurados, deve-se restartar todo o serviço no master:
+
+```
+$ sbin/stop-all.sh
+...
+$ sbin/start-dfs.sh
+...
+$ sbin/start-yarn.sh
+```
+
+- Agora ao entrar na interface web: http://master:50070/dfshealth.html será possível ver 3 nós em execução:
+
+![LiveNodes](./images/Screenshot5.png)
+
+- Se clicado no link "Live Nodes", é possível ainda obter mais detalhes:
+
+![NodeDetails](./images/Screenshot4.png)
