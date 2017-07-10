@@ -310,7 +310,7 @@ $ jps
 192.168.133.149 master
 ```
 
-- Configurar `/etc/hosts` no master:
+- Adicionar a linha do novo slave em `/etc/hosts` no master:
 
 ```
 ...
