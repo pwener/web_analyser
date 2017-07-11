@@ -1,1 +1,7 @@
 # Conclusão do Relatório
+
+Ao longo do desenvolvimento deste projeto, foi possível perceber o poder do Hadoop para resolver uma série problemas recorrentes no contexto de Big Data, principalmente, a partir da versão 2.0 com a introdução do YARN. Mesmo antes da introdução do YARN, o conjunto de MapReduce com HDFS era algo bastante poderoso, e que podia resolver uma série de problemas comuns nesse contexto. Com a implementação do YARN, essa grande quantidade de aplicações se tornou algo muito maior, visto que essa mudança permitiu o framework do Hadoop  utilizar outros frameworks de processamento, além de programas que não são baseados no paradigma MapReduce.
+
+Entender o Hadoop traz um suporte poderoso para lidar com grandes quantidades de dados em qualquer contexto computacional. As possibilidades de experimentação e uso ainda são muito grandes, seria praticamente impossível abordar todo potencial da ferramenta, ainda que este relatório foi contemplado o entendimento básico, o que é expansível para uma variedade de soluções que se encaixam nos problemas de Map Reduce.
+
+Portanto, esse projeto foi bastante proveitoso e permitiu com que os alunos tivessem um contato inicial com Big Data e Data Mining, facilitando que futuros projetos sejam desenvolvidos nesta área. Portanto, além de interessante, essa experiência será bastante  útil, visto que esta área está crescendo rapidamente na atualidade.
