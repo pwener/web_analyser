@@ -1,6 +1,10 @@
 # vim files
 *.swp
 
+final_report.md
+
+*.html
+
 # parser files
 parser/input/
 parser/output/
