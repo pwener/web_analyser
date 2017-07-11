@@ -1,6 +1,8 @@
 # vim files
 *.swp
 
+*.html
+
 # parser files
 parser/input/
 parser/output/

@@ -43,6 +43,30 @@ O HDFS pode ser usado como módulo independente. Uma situação bem típica é o
 
 Qualquer aplicação que precise salvar imagens, vídeos ou qualquer tipo arquivo, é recomendado suporte a um sistema de arquivos distribuído, uma vez que os bancos relacionais tem dificuldades em persistir esses dados.
 
+## Usando o HDFS
+
+O HDFS pode ser usado em qualquer instância do hadoop, ou seja, em qualquer _Node_ ativo, por exemplo, é possível usar dentro de um Data Node os comandos do fs, por exemplo:
+
+```
+$ hadoop fs -ls /
+Found 3 items
+drwxr-xr-x   - fsdadmin supergroup          0 2017-07-06 18:12 /input
+drwxr-xr-x   - fsdadmin supergroup          0 2017-07-07 15:04 /output_2
+drwx------   - fsdadmin supergroup          0 2017-07-05 11:10 /tmp
+kuwener@wenerianus:/usr/hadoop-2.8.0$ hadoop fs -mkdir /folder_test
+kuwener@wenerianus:/usr/hadoop-2.8.0$ hadoop fs -ls /
+Found 4 items
+drwxr-xr-x   - kuwener  supergroup          0 2017-07-07 16:17 /folder_test
+drwxr-xr-x   - fsdadmin supergroup          0 2017-07-06 18:12 /input
+drwxr-xr-x   - fsdadmin supergroup          0 2017-07-07 15:04 /output_2
+drwx------   - fsdadmin supergroup          0 2017-07-05 11:10 /tmp
+```
+
+Executando o comando `$ hadoop fs` é possivel ver uma série de opções para operar dentro do HDFS.
+
+
+### Referências
+
 [1] https://www.ibm.com/developerworks/br/library/wa-introhdfs/index.html
 
 [2] http://hadoopinrealworld.com/namenode-and-datanode/

@@ -72,6 +72,8 @@ export YARN_HOME=$HADOOP_HOME
 
 Para nossos experimentos é necessário a instalação distribuída, para isso é necessário configurar várias máquinas que serão os nós do cluster. Nesse experimento foi utilizado 3 nós, sendo 1 o master e slave, e os outros dois sendo apenas slaves, um será configurado junto ao master e o outro colocado depois, para demonstrar a elasticidade do sistema. Segue abaixo os procedimentos para configuração dos mesmos.
 
+- Os passos a seguir foram feitos com algumas adaptações, mas ainda baseado nesse tutorial: https://linoxide.com/cluster/setup-hadoop-multi-node-cluster-ubuntu/
+
 - Para prosseguir é necessário realizar a configuração Standalone acima.
 
 - Para facilitar trabalhar com os endereços das máquinas, vamos editar o arquivo `/etc/hosts` em cada nó.
