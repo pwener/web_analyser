@@ -12,25 +12,24 @@ class SimpleWordCounter {
       Hashtable<String, Integer> words = new Hashtable<String, Integer>();
       BufferedReader br = new BufferedReader(new FileReader("test.txt"));
 
+      // For each line in the file
       for (String line; (line = br.readLine()) != null;) {
-          //System.out.println(line);
 
+          // Check if word already exists,
           Integer n = words.get(line);
           if (n == null) {
+              // If word does not exists, save 1.
               words.put(line, 1);
-              //System.out.println(line + words.get(line));
           } else {
+              // If word does not exists, update the value.
               words.put(line, n + 1);
-              //words.computeIfPresent(line, (k, v) -> v + 1);
-              //System.out.println(line + words.get(line));
           }
       }
 
       FileWriter fw = new FileWriter("output.txt");
       BufferedWriter bw = new BufferedWriter(fw);
-
+      // Save each word to file
       for (String key : words.keySet()) {
-          //System.out.println(key + ":" + words.get(key));
           bw.write(key + "  " + words.get(key) + "\n");
       }
       bw.close();
