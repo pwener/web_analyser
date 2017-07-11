@@ -1,5 +1,7 @@
 # Versão simples do contador de palavra.
 
+Esse experimento é simplesmente para mostrar que na visão tradicional de programação é inviável operar com tantos volumes de dados, seja por suporte de memória ou por questões de tempo. Nos subtópicos abaixo é perpassado essa visão.
+
 ## Versão que armazena os resultados em memória
 
 ### Contador para arquivos pequenos
@@ -23,7 +25,7 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 
 ### Código em Java
 
-```
+```java
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.BufferedWriter;
@@ -101,7 +103,7 @@ Dessa forma, percebe-se que demoraria mais de uma hora para processar 2GB de dad
 Observação: foi utilizado o seguinte driver para utilizar MongoDB com java:
 - mongo-java-driver-2.13.3.jar
 
-```
+```java
 import com.mongodb.BasicDBObject;
 import com.mongodb.BulkWriteOperation;
 import com.mongodb.BulkWriteResult;
@@ -182,4 +184,4 @@ public class MongoWordCounter {
 
 ## Conclusão
 
-As duas versões se demostraram ineficientes. Seria necessário paralelizar mais o processamento para que o resultado fosse satisfatório. Para solucionar este problema o Hadoop seria bastante interessante
+As duas versões se demostraram ineficientes. Seria necessário paralelizar mais o processamento para que o resultado fosse satisfatório. Para solucionar este problema o Hadoop seria altamente recomendado.
