@@ -182,6 +182,6 @@ public class MongoWordCounter {
 ```
 
 
-## Conclusão
+## Observação
 
-As duas versões se demostraram ineficientes. Seria necessário paralelizar mais o processamento para que o resultado fosse satisfatório. Para solucionar este problema o Hadoop seria altamente recomendado.
+As duas versões se demostraram ineficientes. Seria necessário paralelizar mais o processamento para que o resultado fosse satisfatório. Para solucionar este problema o Hadoop é altamente recomendado, percebe-se até mesmo pelos resultados obtidos no capitulo anterior(Testando Hadoop), que foram extremamente melhores, até mesmo no caso de um único Node em execução.
