@@ -6,8 +6,7 @@ echo -n > $target
 
 
 parts="introduction contexto parser hdfs map_reduce yarn hadoop_install hadoop_simple \
-				word_count all_tests simple_word_counter conclusion"
-
+				word_count all_tests simple_word_counter conclusion opiniao_pessoal"
 
 for part in $parts; do
 	cat "$part".md >> $target;
