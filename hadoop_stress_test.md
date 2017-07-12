@@ -1,6 +1,5 @@
 # Testes no Hadoop
 
-
 - Fizemos um teste com o contador usando apenas um arquivo de 1.9 GB de nomes aleatórios, afim de testar o comportamento do hadoop trabalhando com essa ordem de tamanho.
 
 - Vale lembrar que essa etapa foi realizada na configuração comum, usando 1 namenode e 3 datanodes, o qual 1 estava junto ao namenode e os outros dois em máquinas distintas.
@@ -13,9 +12,11 @@ $ hadoop fs -put ~/130718954_words.input hdfs://master:9000/input/
 
 - O comando mostra uma série de logs, o qual é possível visualizar erros ou se a operação foi bem sucedida.
 
-- Depois da cópia para o hdfs, o WordCount foi executado:
+- Depois da cópia para o hdfs, o WordCount foi executado nos seguintes cenários.
 
 - Observação: O log de todas execuções foi cortado na parte de MapReduce onde mostra a porcentagem da tarefa, afim de reduzir a quantidade de linhas descritas no relatório.
+
+### Execução em 3 Slaves
 
 ```
 $ hadoop jar wc.jar WordCount hdfs://master:9000/input hdfs://master:9000/output
@@ -108,11 +109,11 @@ java.io.IOException: Got error, status=ERROR, status message , ack with firstBad
 
 ```
 
+### Execução em 2 Slaves
 
-- Então desconectado 1 node, foi rodado de novo o job após excluir output com `$ hadoop fs -rmr hdfs://master:9000/output`. Isto é necessário porque o programa cria sempre a pasta output vazia.
+- Outra vez foi reexecutado o programa, agora sem 1 dos nodes, foi rodado de novo o job após excluir output com `$ hadoop fs -rmr hdfs://master:9000/output`. Isto é necessário porque o programa cria sempre a pasta output vazia.
 
 - Para checar os status dos nodes, é possivel executar o seguinte comando:
-
 
 ```
 $ hadoop dfsadmin -report hdfs://master:9000/
@@ -193,7 +194,6 @@ Last contact: Thu Jul 06 18:39:50 BRT 2017
 - É possível notar que um DataNode está morto, conforme desejado.
 
 - Ao rodar então o `wc.jar` sem 1 datanode, obtivemos:
-
 
 ```
 $ hadoop jar wc.jar WordCount hdfs://master:9000/input hdfs://master:9000/output
@@ -310,9 +310,11 @@ java.io.IOException: Got error, status=ERROR, status message , ack with firstBad
 
 ```
 
+- Apesar de ter iniciado o programa desde o inicio sem 1 DataNode, conforme mostra o próprio log, o programa executou de forma sucedida, mostrando que a redundância funcionou.
 
-- Agora com apenas 2 nodes, executamos outra vez o job derrubando um DataNode no meio do reduce, afim de testar a redundância e tolerância a falhas:
+### Execução em 2 Slaves com desconexão no decorrer do processo
 
+- Outra vez com apenas 2 DataNodes, executamos outra vez o job derrubando um DataNode no meio do reduce, afim de testar a redundância e tolerância a falhas:
 
 ```
 $ hadoop jar wc.jar WordCount hdfs://master:9000/input hdfs://master:9000/output

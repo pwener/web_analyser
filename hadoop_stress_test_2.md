@@ -1,6 +1,6 @@
 # Testes Hadoop com cabo de rede
 
-- Uma vez que os testes passados foram feitos com os data nodes conectados via wi-fi, percebeu-se que talvez a conectividade de rede estaria impactando nos experimentos. Para tirar essas dúvidas foram realizados experimentos com um node conectado pelo cabo de rede.
+- Uma vez que os testes passados foram feitos com os data nodes conectados via wi-fi, percebeu-se que talvez a conectividade de rede estaria impactando nos experimentos. Para tirar essas dúvidas foram realizados experimentos com dois nodes conectados pelo cabo de rede.
 
 - A execução com um master e um cabo de rede teve os seguintes resultados:
 
@@ -175,8 +175,8 @@ $ time hadoop jar wc.jar WordCount hdfs://master:9000/input hdfs://master:9000/o
 real	6m26.887s
 user	0m6.208s
 sys	0m0.304s
-```
 
+```
 - Percebe-se novamente um tempo de execução menor com a queda de um DataNode. Portanto a conectividade não foi o fator que impactou nos experimentos passados.
 
 - Portanto, há duas hipoteses restantes:
