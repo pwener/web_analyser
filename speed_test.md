@@ -1,6 +1,6 @@
 # Testes de performance variando a quantidade de máquinas
 
-O nosso foco foi em realizar dois tipos de testes, um voltado a tolerância a falhas, em que foram adicionados e removidos nós do cluster e outro de perfomance, em que foi medido o tempo de execução das tarefas variando a quantidade de máquinas presentes no cluster. Aqui serão descritos três cenários:
+O nosso foco foi em realizar dois tipos de testes, um voltado a tolerância a falhas, em que foram adicionados e removidos nós do cluster durante a execução e outro de perfomance, em que foi medido o tempo de execução das tarefas variando a quantidade de máquinas presentes no cluster. Aqui serão descritos três cenários:
 
 - 3 máquinas no cluster realizando tarefas
 - 2 máquinas no cluster realizando tarefas
@@ -98,9 +98,9 @@ File Output Format Counters
   Bytes Written=2238785729
 ```
 
-<img src="https://github.com/pwener/web_analyser/blob/master/images/3_node_1.png" width="50%" height="50%">
+<img src="https://github.com/pwener/web_analyser/blob/master/images/3_nodes_1.png" width="50%" height="50%">
 
-<img src="https://github.com/pwener/web_analyser/blob/master/images/3_node_2.png" width="50%" height="50%">
+<img src="https://github.com/pwener/web_analyser/blob/master/images/3_nodes_2.png" width="50%" height="50%">
 
 
 ## 2 Máquinas (Máquina 1 + Máquina 3)
@@ -175,9 +175,9 @@ File Output Format Counters
   Bytes Written=2238785729
 
 ```
-<img src="https://github.com/pwener/web_analyser/blob/master/images/2_node_1.png" width="50%" height="50%">
+<img src="https://github.com/pwener/web_analyser/blob/master/images/2_nodes_1.png" width="50%" height="50%">
 
-<img src="https://github.com/pwener/web_analyser/blob/master/images/2_node_2.png" width="50%" height="50%">
+<img src="https://github.com/pwener/web_analyser/blob/master/images/2_nodes_2.png" width="50%" height="50%">
 
 ## 1 Máquina (Máquina 1)
 A replicação testada neste experimento foi nível 2, assim como no experimento anterior.
